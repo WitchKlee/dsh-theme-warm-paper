@@ -1,0 +1,5 @@
+# 暖纸 bundle patch：把本客户端主题挂进 profile 树。
+# 安装由 plugin_manager install_bundle 完成，不要手写 profile 的 package.json。
+- insert:
+    - id: warm-paper-theme
+      name: 'dsh-theme-warm-paper'

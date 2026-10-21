@@ -1,0 +1,55 @@
+{
+  "name": "dsh-theme-warm-paper",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "暖纸 Warm Paper —— 米杏纸色 × 宋体 × 砖红的手记风 DSH Web 主题：纸纹、书脊线、日期戳。",
+  "author": "WitchKlee",
+  "license": "MIT",
+  "homepage": "https://github.com/WitchKlee/dsh-theme-warm-paper#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WitchKlee/dsh-theme-warm-paper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WitchKlee/dsh-theme-warm-paper/issues"
+  },
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh-theme",
+    "warm-paper",
+    "chinese-typography"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-theme",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-plugin-manager"
+      ]
+    }
+  }
+}
